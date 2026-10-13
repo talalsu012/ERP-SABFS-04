@@ -1,0 +1,25 @@
+/* ===== التواقيع ===== */
+.signatures-section {
+    position: absolute;
+    bottom: 0.2in;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signature-block {
+    width: 30%;
+    text-align: center;
+}
+
+.signature-line {
+    border-top: 1px solid #000;
+    margin-bottom: 5px;
+    height: 1px;
+}
+.signature-title {
+    font-size: 9pt;
+    font-weight: bold;
+}

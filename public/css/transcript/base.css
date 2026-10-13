@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Arial';
+}
+
+/* ===== إعدادات الطباعة (DomPDF) ===== */
+@page {
+    size: A4;
+    margin: 0.2in;
+}
+
+body {
+    position: relative;
+    font-family: 'Arial';
+    font-size: 6pt;
+    line-height: 1.0;
+    padding: 5px;
+    min-height: 95vh;
+}
+
+/* ===== الحاوية ===== */
+.transcript-container {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+/* ===== الجداول ===== */
+.level-header {
+    font-size: 7pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4px;
+    margin-top: 8px;
+    background-color: #f0f0f0;
+    padding: 2px 0;
+    border-radius: 2px;
+    border: 1px solid #000;
+
+}
+
+.subject-table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.subject-table th,
+.subject-table td {
+    border: 1px solid #000;
+    padding: 0.5px 1px;
+    vertical-align: top;
+}
+
+/* ===== جدول سلم التقديرات ===== */
+.grade-scale-horizontal {
+    width: fit-content;
+    border-collapse: collapse;
+    margin-top: 0;
+}
+
+.grade-scale-horizontal th,
+.grade-scale-horizontal td {
+    border: 1px solid #ccc;
+    padding: 2px 6px;
+    text-align: center;
+    font-size: 6.5pt !important;
+}
+
+/* ===== تقليل التباعد ===== */
+.p-1 {
+    padding: 0.25rem;
+}
+
+.space-y-1 > p {
+    margin-bottom: 0.1rem;
+}
+
+/* ===== RTL / LTR ===== */
+
+/* محاذاة سلم التقديرات */
+[dir="rtl"] .grade-scale-horizontal {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+[dir="ltr"] .grade-scale-horizontal {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+/* محاذاة النص داخل الجداول */
+[dir="rtl"] .subject-table .text-left {
+    text-align: right;
+}
+
+/* إزاحة أسماء المواد */
+[dir="ltr"] .subject-name-cell {
+    padding-left: 0.5rem !important;
+    text-align: left;
+}
+
+[dir="rtl"] .subject-name-cell {
+    padding-right: 0.5rem !important;
+    text-align: right;
+}
+
+/* ===== التواقيع ===== */
+.signatures-section {
+    position: absolute;
+    bottom: 0.2in;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signature-block {
+    width: 30%;
+    text-align: center;
+}
+
+.signature-line {
+    border-top: 1px solid #000;
+    margin-bottom: 5px;
+    height: 1px;
+}
+.signature-title {
+    font-size: 6pt;
+}
+

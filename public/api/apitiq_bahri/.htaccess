@@ -1,0 +1,13 @@
+RewriteEngine On
+
+#user
+
+RewriteCond %{REQUEST_METHOD} GET
+RewriteRule ^APITIQ$ getStd.php [NC,L]
+
+RewriteCond %{REQUEST_METHOD} POST
+RewriteRule ^APITIQ$ payments.php [NC,L]
+
+RewriteCond %{REQUEST_METHOD} PUT
+RewriteRule ^APITIQ$ checkPay.php [NC,L]
+

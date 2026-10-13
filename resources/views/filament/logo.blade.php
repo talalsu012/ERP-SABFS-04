@@ -1,0 +1,1 @@
+<img src="{{ asset('static/academy_logo.png') }}" style="height: 50px" alt="Admin">
